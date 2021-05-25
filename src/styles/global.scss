@@ -19,7 +19,42 @@
     --purple-400: #9164FA; 
     --purple-500: #8257E5;
     --purple-800: #6F48C9;
+
+    --background: var(--gray-50);
+    --background-secondary: var(--white);
+
+    --border-gray: var(--gray-100);
+    --border-purple: var(--purple-300);
+
+    --text-primary: var(--gray-800);
+    --text-secondary: var(--gray-500);
+
+    --scrollbar-background: var(--gray-100);
+    --scrollbar: var(--gray-50);
   }
+
+.dark-mode:root {
+    --white: #EFEFF1;
+  
+    --dark-50: ##EFEFF1;
+    --dark-100: #ADADB8;
+    --dark-200: #464649;
+    --dark-500: #272728;
+    --dark-800: #18181B;
+    --dark-900: #0E0E10;
+
+    --background: var(--dark-900);
+    --background-secondary: var(--dark-800);
+
+    --border-gray: var(--dark-500);
+    --border-purple: var(--dark-200);
+
+    --text-primary: var(--dark-50);
+    --text-secondary: var(--dark-100);
+
+    --scrollbar-background: var(--dark-900);
+    --scrollbar: var(--dark-800);
+}
 
 @media (max-width: 1080px) {
     html {
@@ -40,18 +75,18 @@
 }
 
 body {
-    background: var(--gray-50);    
+    background: var(--background);    
 }
 
 body, input, textarea, button {
     font: 500 1rem Inter, sans-serif;
-    color: var(--gray-500);
+    color: var(--text-secondary);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     font-family: Lexend, sans-serif;
-    color: var(--gray-800);
+    color: var(--text-primary);
 }
 
 h1 {
